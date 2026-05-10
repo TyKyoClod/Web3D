@@ -49,17 +49,13 @@ html, body {
   scroll-behavior: smooth;
 }
 
-:focus-visible {
-  outline: 2px solid var(--tw-accent);
-  outline-offset: 2px;
-}
 
 a { color: var(--tw-accent); text-decoration: none; }
 a:hover { color: var(--tw-accent-2); text-decoration: underline; }
 
 h1, h2, h3, h4 { font-family: var(--tw-font-display); font-weight: 600; letter-spacing: .01em; }
 
-/* ----------- nav ----------- */
+/* nav */
 .tw-nav {
   background: rgba(20,14,10,.85) !important;
   backdrop-filter: blur(10px);
@@ -86,15 +82,13 @@ h1, h2, h3, h4 { font-family: var(--tw-font-display); font-weight: 600; letter-s
 .tw-nav .nav-link:hover { color: var(--tw-cream) !important; background: rgba(255,255,255,.04); }
 .tw-nav .nav-link.active { color: var(--tw-accent) !important; }
 
-/* ----------- pages ----------- */
+/* pages */
 .tw-page {
   padding-top: 76px;
   min-height: 100vh;
 }
 
-/* ============================================================
-   3D APP
-   ============================================================ */
+/* 3d app */
 .tw-app-shell { padding: 0; }
 
 .tw-sidebar {
@@ -188,7 +182,7 @@ h1, h2, h3, h4 { font-family: var(--tw-font-display); font-weight: 600; letter-s
 }
 .tw-camera-buttons .btn:hover { background: var(--tw-card-2); color: var(--tw-cream); }
 
-/* ----------- viewer ----------- */
+/* viewer */
 .tw-viewer-col {
   display: flex;
   flex-direction: column;
@@ -223,9 +217,7 @@ h1, h2, h3, h4 { font-family: var(--tw-font-display); font-weight: 600; letter-s
 .tw-scene-desc ul { color: var(--tw-text-mut); font-size: .9rem; padding-left: 1.2rem; }
 .tw-scene-desc strong { color: var(--tw-cream); }
 
-/* ============================================================
-   CONTENT PAGES
-   ============================================================ */
+/* content pages */
 .tw-content-page {
   padding-bottom: 5rem;
   background: linear-gradient(180deg, #1b1410, #20160d);
@@ -278,7 +270,7 @@ h1, h2, h3, h4 { font-family: var(--tw-font-display); font-weight: 600; letter-s
 
 .tw-refs { padding-left: 1.4rem; }
 
-/* ----------- about page overrides ----------- */
+/* about page overrides */
 #page-about .tw-article { max-width: none; }
 #page-about .tw-article h2 {
   text-align: center;
@@ -287,7 +279,7 @@ h1, h2, h3, h4 { font-family: var(--tw-font-display); font-weight: 600; letter-s
 #page-about .tw-article > p { text-align: center; max-width: 680px; margin-left: auto; margin-right: auto; }
 .tw-about-img { max-width: 240px; width: 100%; border-radius: 10px; border: 1px solid var(--tw-line-2); }
 
-/* ----------- about cards ----------- */
+/* about cards */
 .tw-about-card {
   background: var(--tw-card);
   border: 1px solid var(--tw-line-2);
@@ -315,9 +307,6 @@ h1, h2, h3, h4 { font-family: var(--tw-font-display); font-weight: 600; letter-s
 .tw-refs li { margin-bottom: .85rem; color: var(--tw-text-mut); font-size: .92rem; }
 .tw-refs li em { color: var(--tw-cream-2); font-style: italic; }
 
-/* ============================================================
-   RESPONSIVE
-   ============================================================ */
 @media (max-width: 991.98px) {
   .tw-sidebar {
     max-height: none;
@@ -329,6 +318,3 @@ h1, h2, h3, h4 { font-family: var(--tw-font-display); font-weight: 600; letter-s
   .tw-viewer-info { padding: 1rem; }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; }
-}

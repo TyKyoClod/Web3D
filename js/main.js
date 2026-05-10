@@ -69,6 +69,3 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 window.addEventListener('resize', () => app.resize());
-
-window.__app = app;
-window.__ui = ui;

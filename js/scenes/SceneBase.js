@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 
-// references: https://easings.net/
+// by https://easings.net/
 export const ease = {
   linear: (t) => t,
   inQuad:    (t) => t * t,

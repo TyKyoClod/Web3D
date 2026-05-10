@@ -17,8 +17,8 @@ export class UIController {
     this.wireCheckbox(root, 'toggleWireframe', (on) => this.app.setWireframe(on));
 
     this.wireRange(root, 'ambientSlider', 'ambientVal', (v) => this.app.setAmbient(v));
-    this.wireRange(root, 'keySlider',     'keyVal',     (v) => this.app.setKeyLight(v));
-    this.wireRange(root, 'warmthSlider',  'warmthVal',  (v) => this.app.setWarmth(v));
+    this.wireRange(root, 'keySlider', 'keyVal', (v) => this.app.setKeyLight(v));
+    this.wireRange(root, 'warmthSlider', 'warmthVal', (v) => this.app.setWarmth(v));
 
     root.querySelectorAll('[data-camera]').forEach((btn) => {
       btn.onclick = () => this.app.applyCameraPreset(btn.dataset.camera);
